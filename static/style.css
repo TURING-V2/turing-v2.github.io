@@ -1,0 +1,66 @@
+/* ── Colour ── */
+:root {
+  --background: #1d2021;
+  --foreground: #ebdbb2;
+  --accent:     #8ec07c;
+}
+
+body, .post-content, .post-title, p, li, blockquote {
+  font-family: "Fira Code", "Fira Mono", monospace;
+}
+
+a, a:visited { color: #8ec07c; }
+a:hover, a:focus { color: #b8d8a8; }
+
+.logo a, .logo a:visited, .logo a:hover {
+  color: #8ec07c;
+  border-bottom: none;
+}
+
+.post-title a:hover { border-bottom-color: #8ec07c; }
+
+.post-tags a { color: #8ec07c; font-size: 0.78rem; opacity: 0.75; }
+.post-tags a:hover { opacity: 1; color: #b8d8a8; }
+
+.post-content a {
+  color: #8ec07c;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(142,192,124,0.3);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.post-content a:hover { color: #b8d8a8; border-bottom-color: #b8d8a8; }
+
+.button, .read-more.button { border-color: #8ec07c; color: #8ec07c; }
+.button:hover, .read-more.button:hover { background: #8ec07c; color: #1d2021; }
+
+::selection { background: #8ec07c; color: #1d2021; }
+
+body { background-color: #1d2021; }
+
+body {
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  line-height: 1.75;
+}
+
+.logo a { font-size: 1.1rem; letter-spacing: -0.02em; }
+
+.posts-group { margin-bottom: 1.6rem; }
+
+.post-title a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.post-meta { opacity: 0.45; font-size: 0.8rem; }
+
+.post-content hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  margin: 2.5rem 0;
+}
+
+pre code { font-size: 0.88rem; }
+
+footer { opacity: 0.3; font-size: 0.78rem; }
